@@ -12,7 +12,6 @@ io.on('connection', (socket) => {
     io.emit('chat message', msg);
   });
 });
-
-http.listen(port, () => {
+http.listen(80,'chat.ginalne.host', () => {
   console.log(`Socket.IO server running at http://localhost:${port}/`);
 });
