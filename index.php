@@ -48,7 +48,7 @@ curl_setopt_array($curl, array(
 
 $response = curl_exec($curl);
 curl_close($curl);
-if (!in_array(pathinfo($_SERVER["REQUEST_URI"], PATHINFO_EXTENSION), ['php', 'js'])) {
+if (in_array(pathinfo($_SERVER["REQUEST_URI"], PATHINFO_EXTENSION), ['php', 'js'])) {
   header("Cache-Control: no-cache, no-store, must-revalidate");
   header("Pragma: no-cache");
   header("Expires: 0");
