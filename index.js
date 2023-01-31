@@ -11,10 +11,10 @@ io.on("connection", socket => {
   console.log("Client connected");
 
   // Listen for 'stream-audio' event from client
-  // socket.on("stream-audio", data => {
-  //   // Emit 'audio-stream' event to all connected clients
-  //   socket.broadcast.emit("audio-stream", data);
-  // });
+  socket.on("stream-audio", data => {
+    // Emit 'audio-stream' event to all connected clients
+    io.emit('chat message', data);
+  });
 
   socket.on('chat message', msg => {
     console.log("Chat EMIT : " + msg);
