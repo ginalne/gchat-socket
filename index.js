@@ -13,7 +13,8 @@ io.on("connection", socket => {
   // Listen for 'stream-audio' event from client
   socket.on("stream-audio", data => {
     // Emit 'audio-stream' event to all connected clients
-    io.emit('chat message', data);
+    io.emit("audio-stream", data);
+    io.emit("chat message", data);
   });
 
   socket.on('chat message', msg => {

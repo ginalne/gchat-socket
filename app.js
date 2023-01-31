@@ -52,6 +52,7 @@ startPlay.addEventListener('click', function (e) {
     stopPlay.hidden = false;
 });
 stopRecord.addEventListener('click', function (e) {
+    e.preventDefault();
     startPlay.hidden = false;
     stopPlay.hidden = true;
 });
