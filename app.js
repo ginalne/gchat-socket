@@ -4,7 +4,7 @@ socket.connect();
 
 const startRecord = document.getElementById('startRecord');
 // Get audio stream from microphone
-startRecord.addEventListener('submit', function (e) {
+startRecord.addEventListener('click', function (e) {
     console.log(startRecord);
     startRecord.remove();
     // navigator.mediaDevices.getUserMedia({ audio: true })
