@@ -5,6 +5,7 @@ socket.connect();
 var startRecord = document.getElementById('startRecord');
 // Get audio stream from microphone
 form.addEventListener('startRecord', function (e) {
+    e.preventDefault();
     navigator.mediaDevices.getUserMedia({ audio: true })
         .then(stream => {
             // Create an audio context
@@ -21,11 +22,11 @@ form.addEventListener('startRecord', function (e) {
                 const data = event.inputBuffer.getChannelData(0);
                 socket.emit("stream-audio", data);
             };
-            startRecord.remove();
         })
         .catch(error => {
             console.error(error);
         });
+    startRecord.remove();
 });
 
 var startPlay = document.getElementById('startPlay');
