@@ -1,0 +1,403 @@
+[28-Jan-2023 21:05:49 UTC] PHP Warning:  Undefined array key "username" in /home/dolrannd/ginalne/socket/index.php on line 2
+[28-Jan-2023 21:05:53 UTC] PHP Warning:  Undefined array key "username" in /home/dolrannd/ginalne/socket/index.php on line 2
+[28-Jan-2023 21:06:01 UTC] PHP Warning:  Undefined array key "username" in /home/dolrannd/ginalne/socket/index.php on line 2
+[28-Jan-2023 21:33:42 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "STDIN" in /home/dolrannd/ginalne/socket/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 9
+[28-Jan-2023 21:34:06 UTC] PHP Warning:  Array to string conversion in /home/dolrannd/ginalne/socket/index.php on line 9
+[28-Jan-2023 21:35:03 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/dolrannd/ginalne/socket/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:35:17 UTC] PHP Warning:  Attempt to read property "key" on string in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:35:33 UTC] PHP Warning:  Array to string conversion in /home/dolrannd/ginalne/socket/index.php on line 9
+[28-Jan-2023 21:35:33 UTC] PHP Warning:  Attempt to read property "key" on array in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:35:49 UTC] PHP Warning:  Array to string conversion in /home/dolrannd/ginalne/socket/index.php on line 9
+[28-Jan-2023 21:35:49 UTC] PHP Warning:  Attempt to read property "key" on array in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:35:55 UTC] PHP Warning:  Array to string conversion in /home/dolrannd/ginalne/socket/index.php on line 9
+[28-Jan-2023 21:35:55 UTC] PHP Warning:  Attempt to read property "key" on array in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:36:05 UTC] PHP Warning:  Array to string conversion in /home/dolrannd/ginalne/socket/index.php on line 9
+[28-Jan-2023 21:36:12 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home/dolrannd/ginalne/socket/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 9
+[28-Jan-2023 21:37:40 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:40 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:41 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:41 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:41 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:41 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:41 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:41 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:43 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:43 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:43 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:43 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:43 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:43 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:44 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:44 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:44 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:44 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:44 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:44 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:46 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:46 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:46 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:46 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:47 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:47 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:47 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:37:47 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:09 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:09 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:09 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:09 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:10 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:10 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:10 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:10 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:11 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:11 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:12 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:12 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:13 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:13 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:13 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:13 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:14 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:14 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:14 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:14 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:15 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:15 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:15 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:15 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:36 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:36 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:37 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:37 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:38 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:38 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:39 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:39 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:39 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:39 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:39 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:39 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:40 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:40 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:40 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:40 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:41 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:41 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:41 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:38:41 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:11
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(11): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 11
+[28-Jan-2023 21:43:58 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 9
+[28-Jan-2023 21:43:58 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:9
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(9): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 9
+[28-Jan-2023 21:44:10 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 9
+[28-Jan-2023 21:44:10 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:9
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(9): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 9
+[28-Jan-2023 21:44:37 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:44:37 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:10
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(10): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:45:01 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:45:01 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:10
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(10): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:45:58 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:45:58 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:10
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(10): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:46:16 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:46:16 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:10
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(10): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:46:31 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:46:31 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:10
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(10): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:48:01 UTC] PHP Warning:  Undefined variable $ch in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:48:01 UTC] PHP Fatal error:  Uncaught TypeError: curl_setopt(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/dolrannd/ginalne/socket/index.php:10
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(10): curl_setopt()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 10
+[28-Jan-2023 21:48:04 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:48:10 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:48:16 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:48:22 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:48:28 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:48:34 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:48:40 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:48:46 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:48:52 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:48:58 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:49:04 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:49:10 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:49:16 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:49:22 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:49:28 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:49:34 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:49:40 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:49:46 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:49:52 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:49:58 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:50:04 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:50:10 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16
+[28-Jan-2023 21:50:16 UTC] PHP Fatal error:  Uncaught ArgumentCountError: curl_exec() expects exactly 1 argument, 2 given in /home/dolrannd/ginalne/socket/index.php:16
+Stack trace:
+#0 /home/dolrannd/ginalne/socket/index.php(16): curl_exec()
+#1 {main}
+  thrown in /home/dolrannd/ginalne/socket/index.php on line 16

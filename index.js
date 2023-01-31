@@ -1,7 +1,7 @@
 const app = require('express')();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
@@ -12,6 +12,6 @@ io.on('connection', (socket) => {
     io.emit('chat message', msg);
   });
 });
-http.listen(80,'chat.ginalne.host', () => {
+http.listen(port,'127.0.0.1', () => {
   console.log(`Socket.IO server running at http://localhost:${port}/`);
 });
