@@ -21,6 +21,7 @@ form.addEventListener('startRecord', function (e) {
                 const data = event.inputBuffer.getChannelData(0);
                 socket.emit("stream-audio", data);
             };
+            startRecord.remove();
         })
         .catch(error => {
             console.error(error);
