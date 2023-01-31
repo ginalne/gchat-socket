@@ -42,8 +42,8 @@ startPlay.addEventListener('click', function (e) {
     socket.on("audio-stream", data => {
         const audioContext = new (window.AudioContext || window.webkitAudioContext)();
         const source = audioContext.createBufferSource();
-        const buffer = audioContext.createBuffer(0, data.length, audioContext.sampleRate);
-        buffer.getChannelData(0).set(data);
+        const buffer = audioContext.createBuffer(1, data.length, audioContext.sampleRate);
+        buffer.getChannelData(1).set(data);
         source.buffer = buffer;
         source.connect(audioContext.destination);
         source.start();
