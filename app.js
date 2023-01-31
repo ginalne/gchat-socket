@@ -3,6 +3,7 @@ const socket = io();
 socket.connect();
 var isRecording = false;
 var isPlaying = false;
+var dataBuffer = [];
 const startRecord = document.getElementById('startRecord');
 const stopRecord = document.getElementById('stopRecord');
 // Get audio stream from microphone
@@ -21,7 +22,9 @@ startRecord.addEventListener('click', function (e) {
             // Process audio data
             processor.onaudioprocess = event => {
                 const data = event.inputBuffer.getChannelData(0);
-                socket.emit("stream-audio", data);
+                dataBuffer.push(data);
+                console.log('Recording...', dataBuffer.length, data.byteLength);
+                // socket.emit("stream-audio", data);
                 if (!isRecording) {
                     startRecord.hidden = false;
                     stopRecord.hidden = true;
@@ -45,19 +48,30 @@ const stopPlay = document.getElementById('stopPlay');
 // // Play audio stream from server
 startPlay.addEventListener('click', function (e) {
     e.preventDefault();
-    socket.on("audio-stream", data => {
-        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-        const source = audioContext.createBufferSource();
-        const buffer = audioContext.createBuffer(1, data.length, audioContext.sampleRate);
-        buffer.getChannelData(1).set(data);
-        source.buffer = buffer;
-        source.connect(audioContext.destination);
-        source.start();
-    });
+    // socket.on("audio-stream", data => {
+// }
+    isPlaying = true;
     startPlay.hidden = true;
     stopPlay.hidden = false;
 });
-stopRecord.addEventListener('click', function (e) {
+
+let i = 0;
+setInterval(() => {
+    if (isPlaying) {
+        if (i < dataBuffer.length) {
+            const data = dataBuffer[i];
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const source = audioContext.createBufferSource();
+            const buffer = audioContext.createBuffer(1, data.length, audioContext.sampleRate);
+            buffer.getChannelData(1).set(data);
+            source.buffer = buffer;
+            source.connect(audioContext.destination);
+            source.start();
+        }
+        i += 1;
+    }
+}, 1000);
+stopPlay.addEventListener('click', function (e) {
     e.preventDefault();
     startPlay.hidden = false;
     stopPlay.hidden = true;
