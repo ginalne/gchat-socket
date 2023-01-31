@@ -6,7 +6,7 @@ var isRecording = false;
 var isPlaying = false;
 var dataBuffer = [];
 
-const audioSampleRate = 4096;
+
 
 const startRecord = document.getElementById('startRecord');
 const stopRecord = document.getElementById('stopRecord');
@@ -16,9 +16,9 @@ startRecord.addEventListener('click', function (e) {
         .then(stream => {
             // Create an audio context
             const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-            audioContext.sampleRate = audioSampleRate;
+            audioContext.sampleRate = 4096;
             const source = audioContext.createMediaStreamSource(stream);
-            const processor = audioContext.createScriptProcessor(audioSampleRate, 2, 1);
+            const processor = audioContext.createScriptProcessor(4096, 2, 1);
             isRecording = true;
             // Connect the audio source to the script processor
             source.connect(processor);
@@ -33,9 +33,14 @@ startRecord.addEventListener('click', function (e) {
                     const el2 = dataCh2[index];
                     nextData[index] = (el1 + el2) / 2
                 }
-                // dataBuffer.push(nextData);
-                console.log('Recording...', nextData.byteLength + 'Byte', nextData.length);
-                socket.emit("stream-audio", nextData);
+                dataBuffer.push(nextData);
+                console.log('Recording...', dataBuffer.length, nextData.byteLength + 'Byte', nextData.length);
+                // console.log(sum);
+                // ctx.moveTo(currentPos, 0);
+                // ctx.lineTo(currentPos, 50 + 50 * a);
+                // ctx.stroke();
+                currentPos++;
+                // socket.emit("stream-audio", data);
                 if (!isRecording) {
                     startRecord.hidden = false;
                     stopRecord.hidden = true;
@@ -55,45 +60,42 @@ stopRecord.addEventListener('click', function (e) {
 
 const startPlay = document.getElementById('startPlay');
 const stopPlay = document.getElementById('stopPlay');
+// // Play audio stream from server
 
-const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-audioCtx.sampleRate = audioSampleRate;
+// let i = 0;
+// const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+// const source = audioContext.createBufferSource();
+// source.connect(audioContext.destination);
+// source.start();
+// setInterval(() => {
+//     if (isPlaying) {
+//         if (i < dataBuffer.length) {
+//             // const data = dataBuffer[i];
+//             // const buffer = audioContext.createBuffer(1, 4096, audioContext.sampleRate);
+//             // source.buffer = buffer;
+//             // buffer.getChannelData(0).set(data);
+//             console.log("Playing buffer i-", i);
+//         }
+//         i += 1;
+//     }
+// }, 1000);
+
+
 startPlay.addEventListener('click', function (e) {
-    console.log('start Listening!');
     e.preventDefault();
-    socket.on("audio-stream", data => {
-        const final = new Float32Array(data);
-        console.log(final);
-        const source = audioCtx.createBufferSource();
-        const buffer = audioCtx.createBuffer(1, final.length, audioCtx.sampleRate);
-        const channel = buffer.getChannelData(0);
-        channel.set(final);
-        // let index = 0;
-        // dataBuffer.forEach(buff => {
-        //     console.log("Playing Record...", index);
-        //     buff.forEach(
-        //         value => {
-        //             channel[index] = value;
-        //             index++;
-        //         }
-        //     )
-        // });
-        source.buffer = buffer;
-        source.connect(audioCtx.destination);
-        source.start();
-    });
+    // socket.on("audio-stream", data => {
+// }
     isPlaying = true;
-    startPlay.hidden = true;
-    stopPlay.hidden = false;
+    // startPlay.hidden = true;
+    // stopPlay.hidden = false;
 });
-
 stopPlay.addEventListener('click', function (e) {
     e.preventDefault();
     isPlaying = false;
-    socket.removeAllListeners("audio-stream");
     startPlay.hidden = false;
     stopPlay.hidden = true;
 });
+
 
 var messages = document.getElementById('messages');
 var form = document.getElementById('form');
