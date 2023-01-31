@@ -3,6 +3,7 @@ const socket = io();
 socket.connect();
 
 const startRecord = document.getElementById('startRecord');
+const stopRecord = document.getElementById('stopRecord');
 // Get audio stream from microphone
 startRecord.addEventListener('click', function (e) {
     navigator.mediaDevices.getUserMedia({ audio: true })
@@ -25,12 +26,18 @@ startRecord.addEventListener('click', function (e) {
         .catch(error => {
             console.error(error);
         });
-    startRecord.remove();
+    startRecord.hidden = true;
+    stopRecord.hidden = false;
+});
+stopRecord.addEventListener('click', function (e) {
+    startRecord.hidden = false;
+    stopRecord.hidden = true;
 });
 
 const startPlay = document.getElementById('startPlay');
+const stopPlay = document.getElementById('stopPlay');
 // // Play audio stream from server
-startPlay.addEventListener('submit', function (e) {
+startPlay.addEventListener('click', function (e) {
     e.preventDefault();
     socket.on("audio-stream", data => {
         const audioContext = new (window.AudioContext || window.webkitAudioContext)();
@@ -41,7 +48,12 @@ startPlay.addEventListener('submit', function (e) {
         source.connect(audioContext.destination);
         source.start();
     });
-    startPlay.remove();
+    startPlay.hidden = true;
+    stopPlay.hidden = false;
+});
+stopRecord.addEventListener('click', function (e) {
+    startPlay.hidden = false;
+    stopPlay.hidden = true;
 });
 
 
