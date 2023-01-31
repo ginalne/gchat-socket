@@ -7,7 +7,20 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
-io.on('connection', (socket) => {
+io.on("connection", socket => {
+  console.log("Client connected");
+
+  // Listen for 'stream-audio' event from client
+  socket.on("stream-audio", data => {
+    // Emit 'audio-stream' event to all connected clients
+    socket.broadcast.emit("audio-stream", data);
+  });
+
+  // Listen for client disconnection
+  socket.on("disconnect", () => {
+    console.log("Client disconnected");
+  });
+  
   socket.on('chat message', msg => {
     io.emit('chat message', msg);
   });
