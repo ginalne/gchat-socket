@@ -48,7 +48,7 @@ curl_setopt_array($curl, array(
 
 $response = curl_exec($curl);
 curl_close($curl);
-echo pathinfo($path, $_SERVER["REQUEST_URI"]);
+echo pathinfo($_SERVER["REQUEST_URI"], PATHINFO_EXTENSION);
 return;
 header("Cache-Control: no-cache, no-store, must-revalidate");
 header("Pragma: no-cache");
