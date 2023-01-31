@@ -15,6 +15,7 @@ io.on("connection", socket => {
     // Emit 'audio-stream' event to all connected clients
     io.emit("audio-stream", data);
     io.emit("audio", "Audio : "+data.byteLength);
+    console.log("Audio : "+data.byteLength);
   });
 
   socket.on('chat message', msg => {
