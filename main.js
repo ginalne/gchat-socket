@@ -2,7 +2,7 @@ const socket = io();
     // Connect to the server
 socket.connect();
 
-var startRecord = document.getElementById('startRecord');
+const startRecord = document.getElementById('startRecord');
 // Get audio stream from microphone
 form.addEventListener('startRecord', function (e) {
     e.preventDefault();
@@ -29,7 +29,7 @@ form.addEventListener('startRecord', function (e) {
     startRecord.remove();
 });
 
-var startPlay = document.getElementById('startPlay');
+const startPlay = document.getElementById('startPlay');
 // // Play audio stream from server
 form.addEventListener('startPlay', function (e) {
     e.preventDefault();
@@ -42,6 +42,7 @@ form.addEventListener('startPlay', function (e) {
         source.connect(audioContext.destination);
         source.start();
     });
+    startPlay.remove();
 });
 
 
