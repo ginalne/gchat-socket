@@ -1,7 +1,8 @@
 const socket = io();
     // Connect to the server
 socket.connect();
-
+var isRecording = false;
+var isPlaying = false;
 const startRecord = document.getElementById('startRecord');
 const stopRecord = document.getElementById('stopRecord');
 // Get audio stream from microphone
@@ -12,7 +13,7 @@ startRecord.addEventListener('click', function (e) {
             const audioContext = new (window.AudioContext || window.webkitAudioContext)();
             const source = audioContext.createMediaStreamSource(stream);
             const processor = audioContext.createScriptProcessor(1024, 1, 1);
-
+            isRecording = true;
             // Connect the audio source to the script processor
             source.connect(processor);
             processor.connect(audioContext.destination);
@@ -21,7 +22,13 @@ startRecord.addEventListener('click', function (e) {
             processor.onaudioprocess = event => {
                 const data = event.inputBuffer.getChannelData(0);
                 socket.emit("stream-audio", data);
+                if (!isRecording) {
+                    startRecord.hidden = false;
+                    stopRecord.hidden = true;
+                    processor.disconnect();
+                }
             };
+            
         })
         .catch(error => {
             console.error(error);
@@ -30,8 +37,7 @@ startRecord.addEventListener('click', function (e) {
     stopRecord.hidden = false;
 });
 stopRecord.addEventListener('click', function (e) {
-    startRecord.hidden = false;
-    stopRecord.hidden = true;
+    isRecording = false;
 });
 
 const startPlay = document.getElementById('startPlay');
