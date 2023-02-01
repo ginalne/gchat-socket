@@ -15,6 +15,12 @@ app.get('/play-sound.js', function (req, res) {
 app.get('/canvas.js', function (req, res) {
     res.sendFile(__dirname + '/canvas.js');
 });
+app.get('/rtp', function (req, res) {
+    res.sendFile(__dirname + '/rtp/video.html');
+});
+app.get('/rtp/index.js', function (req, res) {
+    res.sendFile(__dirname + '/rtp/index.js');
+});
 
 io.on("connection", socket => {
   console.log("Client connected");
@@ -27,6 +33,19 @@ io.on("connection", socket => {
     console.log("Chat EMIT : " + msg);
     io.emit('chat message', msg);
   });
+
+  socket.on("offer", offer => {
+    // Retrieve the SDP offer
+    const sdpOffer = offer;
+    console.log(offer);
+    io.emit('remote', offer);
+  });
+  socket.on("answer", offer => {
+    // Retrieve the SDP offer
+    console.log(offer);
+    io.emit('answer', offer);
+  });
+
   // Listen for client disconnection
   socket.on("disconnect", () => {
     console.log("Client disconnected");

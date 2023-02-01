@@ -5,11 +5,14 @@ socket.connect();
 var isRecording = false;
 var isPlaying = false;
 var dataBuffer = [];
+var totalBandwith = 0;
 
 const audioSampleRate = 4096;
 
 const startRecord = document.getElementById('startRecord');
 const stopRecord = document.getElementById('stopRecord');
+const bandwith = document.getElementById('bandwith');
+const bpm = document.getElementById('bpm');
 // Get audio stream from microphone
 startRecord.addEventListener('click', function (e) {
     navigator.mediaDevices.getUserMedia({ audio: true })
@@ -36,6 +39,9 @@ startRecord.addEventListener('click', function (e) {
                 // dataBuffer.push(nextData);
                 console.log('Recording...', nextData.byteLength + 'Byte', nextData.length);
                 socket.emit("stream-audio", nextData);
+                totalBandwith += nextData.byteLength;
+                bandwith.innerHTML = Math.floor(totalBandwith / 1000) + " kB";
+                bpm.innerHTML = Math.floor(totalBandwith / 1000 * 60 / audioContext.currentTime) + " kB/m";
                 if (!isRecording) {
                     startRecord.hidden = false;
                     stopRecord.hidden = true;
@@ -48,9 +54,6 @@ startRecord.addEventListener('click', function (e) {
         });
     startRecord.hidden = true;
     stopRecord.hidden = false;
-});
-stopRecord.addEventListener('click', function (e) {
-    isRecording = false;
 });
 
 const startPlay = document.getElementById('startPlay');
@@ -68,16 +71,6 @@ startPlay.addEventListener('click', function (e) {
         const buffer = audioCtx.createBuffer(1, final.length, audioCtx.sampleRate);
         const channel = buffer.getChannelData(0);
         channel.set(final);
-        // let index = 0;
-        // dataBuffer.forEach(buff => {
-        //     console.log("Playing Record...", index);
-        //     buff.forEach(
-        //         value => {
-        //             channel[index] = value;
-        //             index++;
-        //         }
-        //     )
-        // });
         source.buffer = buffer;
         source.connect(audioCtx.destination);
         source.start();
