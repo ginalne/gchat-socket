@@ -2,6 +2,7 @@ const app = require('express')();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const port = process.env.PORT || 8080;
+const ip = require("ip");
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
@@ -52,9 +53,9 @@ io.on("connection", socket => {
   });
   
 });
-http.listen(port,'127.0.0.1', () => {
-  console.log(`Socket.IO server running at http://localhost:${port}/`);
-});
-// http.listen(port,'0.0.0.0', () => {
+// http.listen(port,'127.0.0.1', () => {
 //   console.log(`Socket.IO server running at http://localhost:${port}/`);
 // });
+http.listen(port,'0.0.0.0', () => {
+  console.log(`Socket.IO server running at http://${ip.address()}:${port}/`);
+});

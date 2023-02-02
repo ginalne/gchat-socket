@@ -5,7 +5,6 @@ const remoteVideo = document.getElementById("remoteVideo");
 const log = document.getElementById("log");
 const connection = document.getElementById("connection");
 const sendOffer = document.getElementById("sendOffer");
-
 // Create a peer connection
 const peerConnection = new RTCPeerConnection();
 let mediaStream = undefined;

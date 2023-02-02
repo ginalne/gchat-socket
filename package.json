@@ -4,6 +4,7 @@
   "description": "Chat Socket for Ginalne",
   "dependencies": {
     "express": "^4.17.1",
+    "ip": "^1.1.8",
     "socket.io": "^4.1.2"
   },
   "scripts": {
